@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 100;
+    background: url(imagen/c465c3f30f9a20ee42ec1736bf0db47b_high.webp);
+}
+
+
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 10px;
+    color: #a0c930; /* Verde más oscuro */
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff; /* Rojo oscuro */
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #90a4ae; /* Azul grisáceo */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #d3f1ba; /* Gris claro */
+}
+
+form button {
+    background: linear-gradient(to right, #af773b, #976212); /* Degradado de azul oscuro a azul claro */
+    color: z#c7b939;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #64b5f6, #1976d2); /* Degradado de azul claro a azul oscuro */
+    transform: translateY(-2px);
+}
