@@ -1,0 +1,194 @@
+
+.volun-form {
+    display: flex;
+    max-width: 66rem;
+    max-height: 100%;
+    margin: 3rem auto;
+    padding: 1rem;
+    font-family: "Karla", sans-serif;
+    color: #ffff;
+}
+
+.formulario {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem auto;
+    flex-direction: column;
+    border-radius: 2rem;
+    /*background: linear-gradient(225deg, #b8b8b8, #ffffff);*/
+    box-shadow: -50px 50px 73px #b3b3b3,
+        50px -50px 73px #ffffff2d;
+    background: repeating-linear-gradient(180deg, #037fad 0%, #1c8373 100%);
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-position: 21.64% 100%;
+    background-size: 100% 100%;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario button {
+    place-self: center;
+}
+
+.formulario hr {
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border: 2px solid;
+    color: #ffff;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    max-width: 100;
+}
+
+/*labels e inputs*/
+.form_group label,
+input,
+select {
+    min-width: 100%;
+    max-height: 100%;
+}
+
+/*labels*/
+.label_formulario {
+    margin-bottom: 0.1rem;
+    font-size: 1.2em;
+}
+
+
+/*inputs*/
+.input_formulario {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0;
+}
+
+.input_formulario:hover {
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-position: 21.64% 100%;
+    background-size: 100% 100%;
+
+}
+.select_formulario {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+
+/*BTN ENVIO*/
+/* From Uiverse.io by adamgiebl */
+button {
+    max-width: 12rem;
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+@media (min-width: 720px) {
+    button{
+        min-width: 30rem;
+        margin: auto 10rem;
+
+    }
+    .volun-form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .formulario {
+        max-width: 100%;
+        flex-direction: column;
+        /* Cambia la dirección del contenedor a columna */
+    }
+
+    .form-group{
+        border: none;
+        max-width: 33.3%;
+    }
+
+    /*.form-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 100%;
+        Asegura que cada grupo de formulario ocupe todo el ancho 
+    }*/
+
+    .form-group label {
+        flex: 1;
+    }
+
+    .form-group input {
+        flex: 2;
+        margin-left: 10px;
+        /* Espacio entre el label y el input */
+    }
+}
